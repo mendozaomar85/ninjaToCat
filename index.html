@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ninja to Cat</title>
+        <style>
+        img {
+            display: block;
+            margin: 5px 0 0 5px;
+            cursor: pointer;
+        }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".firstOfFive").click(function(){
+                    if ($(this).attr("class") == "firstOfFive") {
+                        this.src = this.src.replace("ninja0", "cat0");
+                    } else {
+                        this.src = this.src.replace("cat0", "ninja0");
+                    }
+                    $(this).toggleClass("cat0");
+                });
+                $(".secondOfFive").click(function(){
+                    if ($(this).attr("class") == "secondOfFive") {
+                        this.src = this.src.replace("ninja1", "cat1");
+                    } else {
+                        this.src = this.src.replace("cat1", "ninja1");
+                    }
+                    $(this).toggleClass("cat1");
+                });
+                $(".thirdOfFive").click(function(){
+                    if ($(this).attr("class") == "thirdOfFive") {
+                        this.src = this.src.replace("ninja2", "cat2");
+                    } else {
+                        this.src = this.src.replace("cat2", "ninja2");
+                    }
+                    $(this).toggleClass("cat2");
+                });
+                $(".fourthOfFive").click(function(){
+                    if ($(this).attr("class") == "fourthOfFive") {
+                        this.src = this.src.replace("ninja3", "cat3");
+                    } else {
+                        this.src = this.src.replace("cat3", "ninja3");
+                    }
+                    $(this).toggleClass("cat3");
+                });
+                $(".fifthOfFive").click(function(){
+                    if ($(this).attr("class") == "fifthOfFive") {
+                        this.src = this.src.replace("ninja4", "cat4");
+                    } else {
+                        this.src = this.src.replace("cat4", "ninja4");
+                    }
+                    $(this).toggleClass("cat4");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Ninja to Cat</h1>
+        <div id="top">
+            <img src="images/ninja0.png" class="firstOfFive">
+            <img src="images/ninja1.png" class="secondOfFive">
+            <img src="images/ninja2.png" class="thirdOfFive">
+            <img src="images/ninja3.png" class="fourthOfFive">
+            <img src="images/ninja4.png" class="fifthOfFive">
+        </div>
+    </body>
+</html>
